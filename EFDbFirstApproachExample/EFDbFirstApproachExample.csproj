@@ -135,11 +135,18 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
-    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="Scripts\jquery-3.3.1.js" />
-    <Content Include="Scripts\jquery-3.3.1.min.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <None Include="Scripts\jquery-3.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.7.1.js" />
+    <Content Include="Scripts\jquery-3.7.1.min.js" />
+    <Content Include="Scripts\jquery-3.7.1.slim.js" />
+    <Content Include="Scripts\jquery-3.7.1.slim.min.js" />
+    <Content Include="Scripts\jquery-3.7.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.7.1.min.map" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\popper-utils.js" />
     <Content Include="Scripts\popper-utils.min.js" />
     <Content Include="Scripts\popper.js" />
@@ -169,6 +176,7 @@
     <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="CustomValidations\DivisibleBy10Attribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -181,6 +189,26 @@
     <Compile Include="Migrations\202401261126085_QuantityColumn.Designer.cs">
       <DependentUpon>202401261126085_QuantityColumn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202402011400560_RequiredValidation.cs" />
+    <Compile Include="Migrations\202402011400560_RequiredValidation.Designer.cs">
+      <DependentUpon>202402011400560_RequiredValidation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202402011451253_AvailabilityStatusRequired.cs" />
+    <Compile Include="Migrations\202402011451253_AvailabilityStatusRequired.Designer.cs">
+      <DependentUpon>202402011451253_AvailabilityStatusRequired.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202402011542047_MyValidation11.cs" />
+    <Compile Include="Migrations\202402011542047_MyValidation11.Designer.cs">
+      <DependentUpon>202402011542047_MyValidation11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202402011601202_New.cs" />
+    <Compile Include="Migrations\202402011601202_New.Designer.cs">
+      <DependentUpon>202402011601202_New.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202402011734248_New1.cs" />
+    <Compile Include="Migrations\202402011734248_New1.Designer.cs">
+      <DependentUpon>202402011734248_New1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Brand.cs" />
     <Compile Include="Models\Category.cs" />
@@ -192,8 +220,6 @@
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_LayoutPage1.cshtml" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
-    <Content Include="Scripts\jquery-3.3.1.min.map" />
     <Content Include="Views\Products\Details.cshtml" />
     <Content Include="Views\Products\Create.cshtml" />
     <Content Include="Views\Products\Edit.cshtml" />
@@ -221,6 +247,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202401261126085_QuantityColumn.resx">
       <DependentUpon>202401261126085_QuantityColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202402011400560_RequiredValidation.resx">
+      <DependentUpon>202402011400560_RequiredValidation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202402011451253_AvailabilityStatusRequired.resx">
+      <DependentUpon>202402011451253_AvailabilityStatusRequired.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202402011542047_MyValidation11.resx">
+      <DependentUpon>202402011542047_MyValidation11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202402011601202_New.resx">
+      <DependentUpon>202402011601202_New.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202402011734248_New1.resx">
+      <DependentUpon>202402011734248_New1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
