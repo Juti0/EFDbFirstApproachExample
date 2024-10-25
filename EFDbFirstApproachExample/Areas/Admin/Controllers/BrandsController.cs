@@ -5,18 +5,16 @@ using System.Web;
 using System.Web.Mvc;
 using EFDbFirstApproachExample.Models;
 
-namespace EFDbFirstApproachExample.Controllers
+namespace EFDbFirstApproachExample.Areas.Admin.Controllers
 {
-    public class CategoriesController : Controller
+    public class BrandsController : Controller
     {
-        // GET: Categories/Index
+        // GET: Brands/Index
         public ActionResult Index()
         {
             CompanyDbContext db = new CompanyDbContext();
-            List<Category> categories = db.Categories.ToList();
-            return View(categories);
+            List<Brand> brands = db.Brands.ToList();
+            return View(brands);
         }
     }
 }
-
-
